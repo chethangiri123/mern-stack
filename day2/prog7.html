@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Border Styles with Images</title>
+  <style>
+    /* Common styles for all boxes */
+    .border-box {
+      width: 300px;
+      height: 200px;
+      margin: 10px;
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f9f9f9;
+    }
+
+    /* Image styling */
+    .border-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px; /* Optional: rounded corners for images */
+    }
+
+    /* Dotted border */
+    .dotted {
+      border: 5px dotted #4CAF50;
+    }
+
+    /* Dashed border */
+    .dashed {
+      border: 5px dashed #2196F3;
+    }
+
+    /* Solid border */
+    .solid {
+      border: 5px solid #FF5733;
+    }
+
+    /* Double border */
+    .double {
+      border: 8px double #9C27B0;
+    }
+
+    /* Groove border */
+    .groove {
+      border: 5px groove #FF9800;
+    }
+
+    /* Ridge border */
+    .ridge {
+      border: 5px ridge #00BCD4;
+    }
+
+    /* Inset border */
+    .inset {
+      border: 5px inset #3F51B5;
+    }
+
+    /* Outset border */
+    .outset {
+      border: 5px outset #8BC34A;
+    }
+
+    /* No border */
+    .none {
+      border: none;
+    }
+
+    /* Hidden border */
+    .hidden {
+      border: hidden;
+    }
+    img{
+        width:200px;
+        height:200px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="border-box dotted">
+    <img src="Beef Burger.jpeg" alt="Image with Dotted Border">
+    <p>Dotted Border</p>
+  </div>
+
+  <div class="border-box dashed">
+    <img src="Caesar Salad.jpeg" alt="Image with Dashed Border">
+    <p>Dashed Border</p>
+  </div>
+
+  <div class="border-box solid">
+    <img src="grilledchikn.jpeg" alt="Image with Solid Border">
+    <p>Solid Border</p>
+  </div>
+
+  <div class="border-box double">
+    <img src="Margherita Pizza.jpeg" alt="Image with Double Border">
+    <p>Double Border</p>
+  </div>
+
+  <div class="border-box groove">
+    <img src="Spaghetti Bolognese.jpeg" alt="Image with Groove Border">
+    <p>Groove Border</p>
+  </div>
+
+  <div class="border-box ridge">
+    <img src="chiken ber.jpeg" alt="Image with Ridge Border">
+    <p>Ridge Border</p>
+  </div>
+
+  <div class="border-box inset">
+    <img src="fish.jpeg" alt="Image with Inset Border">
+    <p>Inset Border</p>
+  </div>
+
+  <div class="border-box outset">
+    <img src="kabbab.jpeg" alt="Image with Outset Border">
+    <p>Outset Border</p>
+  </div>
+
+  <div class="border-box none">
+    <img src="non veg.jpeg" alt="Image with No Border">
+    <p>No Border</p>
+  </div>
+
+  <div class="border-box hidden">
+    <img src="porata.jpeg" alt="Image with Hidden Border">
+    <p>Hidden Border</p>
+  </div>
+
+</body>
+</html>

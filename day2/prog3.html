@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrimony Registration Form</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ff5e62, #ff9966);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff5e62;
+      margin-bottom: 20px;
+    }
+
+    .form-container input,
+    .form-container select,
+    .form-container button {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="password"],
+    .form-container select {
+      background-color: #f9f9f9;
+    }
+
+    .form-container input[type="text"]:focus,
+    .form-container input[type="email"]:focus,
+    .form-container input[type="password"]:focus,
+    .form-container select:focus {
+      outline-color: #ff5e62;
+    }
+
+    .form-container .gender,
+    .form-container .dob {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .form-container .gender input,
+    .form-container .dob input {
+      width: 48%;
+    }
+
+    button {
+      background-color: #ff5e62;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff3e4a;
+    }
+
+    .form-container .icon {
+      font-size: 24px;
+      margin-right: 8px;
+    }
+
+    .form-container .field-container {
+      margin-bottom: 10px;
+    }
+
+    .form-container .field-container label {
+      text-align: left;
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .form-container .error {
+      color: #ff3e4a;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+
+    .form-container .terms {
+      font-size: 14px;
+      color: #555;
+      text-align: left;
+      margin-top: 10px;
+    }
+
+    .form-container .terms input {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h1>Matrimony Registration</h1>
+
+    <form action="#" method="post" id="matrimonyForm">
+      <div class="field-container">
+        <label for="name">
+          <span class="icon">👤</span> Full Name
+        </label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="field-container">
+        <label for="email">
+          <span class="icon">📧</span> Email Address
+        </label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="gender">
+        <div class="field-container">
+          <label for="gender">
+            <span class="icon">⚤</span> Gender
+          </label>
+          <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="field-container dob">
+          <label for="dob">
+            <span class="icon">🎂</span> Date of Birth
+          </label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+      </div>
+
+      <div class="field-container">
+        <label for="password">
+          <span class="icon">🔒</span> Password
+        </label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      </div>
+
+      <div class="terms">
+        <label>
+          <input type="checkbox" name="terms" required> I agree to the <a href="#">Terms and Conditions</a>
+        </label>
+      </div>
+
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+</body>
+</html>

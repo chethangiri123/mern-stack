@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paragraph Styling with CSS Selectors</title>
+  <style>
+    /* Type Selector - Targets all <p> elements */
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* Class Selector - Targets only elements with the class "first" */
+    .first {
+      color: #ff6347; /* Tomato color */
+    }
+
+    /* ID Selector - Targets only the element with the ID "second" */
+    #second {
+      color: #4682b4; /* SteelBlue color */
+    }
+
+    /* Attribute Selector - Targets <p> elements with the "data-paragraph" attribute */
+    p[data-paragraph="third"] {
+      color: #32cd32; /* LimeGreen color */
+    }
+  </style>
+</head>
+<body>
+
+  <p class="first">This is the first paragraph, styled using a class selector.</p>
+  <p id="second">This is the second paragraph, styled using an ID selector.</p>
+  <p data-paragraph="third">This is the third paragraph, styled using an attribute selector.</p>
+
+</body>
+</html>

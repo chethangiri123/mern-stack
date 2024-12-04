@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Images Diagonal Placement</title>
+  <style>
+    /* Container to hold both images */
+    .image-container {
+      position: relative;
+      width: 600px; /* Container width */
+      height: 400px; /* Container height */
+      margin: 50px auto; /* Center the container */
+      border: 2px solid #ccc; /* Border around the container */
+      background-color: #f9f9f9;
+    }
+
+    /* Image styling */
+    .image-container img {
+      position: absolute;
+      width: 200px; /* Adjust image size */
+      height: 150px; /* Adjust image size */
+      border: 5px solid #333; /* Border for each image */
+      border-radius: 10px; /* Optional: rounded corners */
+    }
+
+    /* Positioning the first image (top-left) */
+    .image1 {
+      top: 10px;
+      left: 10px;
+    }
+
+    /* Positioning the second image (bottom-right) */
+    .image2 {
+      bottom: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+    <img src="Caesar Salad.jpeg" alt="Image 1" class="image1">
+    <img src="Margherita Pizza.jpeg" alt="Image 2" class="image2">
+  </div>
+
+</body>
+</html>
