@@ -3,101 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Departments</title>
-    <style>
-        /* Adding some simple styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        section {
-            margin: 20px;
-        }
-
-        .department-list {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .department {
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 4px;
-        }
-
-        .department-title {
-            font-weight: bold;
-            color: #333;
-        }
-
-        .department-details {
-            color: #555;
-        }
-
-        .department-inline {
-            display: inline-block;
-            margin-right: 15px;
-            padding: 10px;
-            background-color: #e3f2fd;
-            border-radius: 4px;
-        }
-
-        .department-inline:hover {
-            background-color: #bbdefb;
-        }
-    </style>
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <header>
-        <h1>Welcome to DBIT College</h1>
-        <p>Explore our various departments</p>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">E-Shop</div>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="search-cart">
+            <input type="text" placeholder="Search...">
+            <span class="cart-icon">🛒</span>
+        </div>
     </header>
 
-    <section>
-        <h2>Departments Overview</h2>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Sidebar Filters -->
+        <aside class="sidebar">
+            <h3>Filters</h3>
+            <div class="filter">
+                <h4>Category</h4>
+                <select>
+                    <option>All</option>
+                    <option>Electronics</option>
+                    <option>Clothing</option>
+                    <option>Home</option>
+                </select>
+            </div>
+            <div class="filter">
+                <h4>Price Range</h4>
+                <input type="range" min="0" max="1000">
+            </div>
+            <div class="filter">
+                <h4>Brand</h4>
+                <select>
+                    <option>All</option>
+                    <option>Brand A</option>
+                    <option>Brand B</option>
+                </select>
+            </div>
+        </aside>
 
-        <!-- Block-level Elements for Department List -->
-        <div class="department-list">
-            <div class="department">
-                <p class="department-title">Computer Science Department</p>
-                <p class="department-details">The Computer Science department offers a variety of programs in software development, artificial intelligence, and data science.</p>
+        <!-- Product Grid -->
+        <section class="product-grid">
+            <div class="product-card">
+                <img src="E2.jpeg" alt="Product 1">
+                <h4>Product 1</h4>
+                <p>$19.99</p>
+                <button>Add to Cart</button>
             </div>
-            <div class="department">
-                <p class="department-title">Mechanical Engineering Department</p>
-                <p class="department-details">This department focuses on manufacturing, robotics, and thermodynamics with state-of-the-art labs.</p>
+            <div class="product-card">
+                <img src="E1.jpeg" alt="Product 2">
+                <h4>Product 2</h4>
+                <p>$29.99</p>
+                <button>Add to Cart</button>
             </div>
-            <div class="department">
-                <p class="department-title">Electrical Engineering Department</p>
-                <p class="department-details">Courses in circuits, systems, and renewable energy are offered in this department.</p>
-            </div>
-            <div class="department">
-                <p class="department-title">Civil Engineering Department</p>
-                <p class="department-details">Focusing on infrastructure, construction, and urban planning.</p>
-            </div>
+            <!-- Add more product cards as needed -->
+        </section>
+    </main>
+
+    <!-- Pagination Section -->
+    <div class="pagination">
+        <button>&laquo; Prev</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>Next &raquo;</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
         </div>
-
-        <h3>Inline Display of Departments</h3>
-        <!-- Inline Elements to display departments side by side -->
-        <div>
-            <span class="department-inline">Electrical Engineering</span>
-            <span class="department-inline">Computer Science</span>
-            <span class="department-inline">Mechanical Engineering</span>
-            <span class="department-inline">Civil Engineering</span>
-        </div>
-    </section>
-
+        <p>&copy; 2024 E-Shop. All Rights Reserved.</p>
+    </footer>
+    <script src="prog4.js"></script>
 </body>
 </html>
